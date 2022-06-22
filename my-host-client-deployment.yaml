@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-host-client
+  labels:
+    app: my-host-client-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-host-client
+  template:
+    metadata:
+      labels:
+        app: my-host-client
+    spec:
+      containers:
+      - name: my-host
+        image: "docker.io/mostmark/my-host-client"
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MY_HOST_SERVICE_NAME
+          value: "MY_HOST"
