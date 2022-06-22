@@ -4,6 +4,7 @@ metadata:
   name: my-host-client
   labels:
     app: my-host-client-app
+    app.openshift.io/runtime: quarkus
 spec:
   replicas: 1
   selector:
