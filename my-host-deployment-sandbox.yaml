@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-host
+  labels:
+    app: my-host-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-host
+  template:
+    metadata:
+      labels:
+        app: my-host
+    spec:
+      containers:
+      - name: my-host
+        image: "docker.io/mostmark/my-host"
+        ports:
+        - containerPort: 8080
+        env:
+        - name: CLUSTERNAME
+          value: "SANDBOX"
