@@ -77,3 +77,6 @@ The following diagram describes the demo setup.
 7. In the CRC terminal. Get the route for the Skupper Console and demonstrate the console.
 
         oc get route skupper
+
+
+Continue to [Part2](./part1-hybrid-cloud.md) where we will deploy both the frontend and the backend service and show how Skupper can provide resiliency and loadbalincing
