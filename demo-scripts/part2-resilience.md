@@ -35,3 +35,6 @@ The following diagram describes the setup.
 6. Access the Skupper Console at the CRC cluster and show the updated topology.
 
         oc get route skupper
+
+
+Continue to [Part3](./part3-private-database.md) where we will access a MySQL database running on a RHEL instance in a private network.
