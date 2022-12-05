@@ -12,7 +12,7 @@ The prerequisites to run the demo script is to install a MySQL on your RHEL inst
         sudo systemctl start mysqld.service
         sudo systemctl enable mysqld.service
 
-Use the following snippet to create the database and user in the MySQL database:
+Use the following snippet to create the database and user the sample application is expecting:
         
         mysql -u root
 
