@@ -16,6 +16,7 @@ Use the following snippet to create the database and user the sample application
         
         mysql -u root
 
+        CREATE DATABASE fruitdb;
         CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'mypassword';
         CREATE USER 'myuser'@'%' IDENTIFIED BY 'mypassword';
         GRANT ALL PRIVILEGES ON fruitdb.* TO 'myuser'@'%';
