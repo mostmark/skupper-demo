@@ -54,7 +54,7 @@ Use the following snippet to create the database and user the sample application
 
         oc new-app docker.io/mostmark/fruit-database
         oc expose service/fruit-database
-        oc get routes
+        oc get route fruit-database
 
 6. Open the web application and notice the rows displayed
 
