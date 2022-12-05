@@ -1,6 +1,6 @@
 # Skupper demo
 
-This demo shows some capabilities in [Skupper](https://skupper.io) and is split into three parts:
+This demo shows some of the capabilities in [Skupper](https://skupper.io) and is split into three parts:
 
   - [Part1](./demo-scripts/part1-hybrid-cloud.md) shows how you can set up an application with two services deployed in two different OpenShift clusters.
   
