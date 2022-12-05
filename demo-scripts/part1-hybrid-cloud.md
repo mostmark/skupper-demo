@@ -2,7 +2,9 @@
 
 This demo script shows you how to deploy a front-end service running on one cluster that access a backend service running on a second cluster on a private network. The demo used the free service [OpenShift Developer Sandbox](https://developers.redhat.com/developer-sandbox) and Red Hat [OpenShift Local](https://developers.redhat.com/products/openshift-local/overview) (formerly Red Hat CodeReady Containers - referred to CRC in this demo script) deployed on your local network. The demo script should work with other clusters available to your desposal.
 
-To run the demo script you need to have the skupper CLI installed as well as the OpenShift CLI. See the [Skupper Getting Started Guide](https://skupper.io/start/index.html) for info on how to install the Skupper CLI.
+To run the demo script you need to have the skupper CLI installed as well as the OpenShift CLI. See the [Skupper Getting Started Guide](https://skupper.io/start/index.html) for info on how to install the Skupper CLI. Installation of the Skupper is simple and the following snippet shows how to install the CLI on Linux/Mac:
+
+        curl https://skupper.io/install.sh | sh
 
 The following diagram describes the setup.
 
