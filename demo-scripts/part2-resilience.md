@@ -32,7 +32,9 @@ The following diagram describes the setup.
 
         oc scale deployment/my-host --replicas=2
 
-6. Access the Skupper Console at the CRC cluster and show the updated topology.
+6. In the SANDBOX terminal. Perform the same steps as in 3, 4 and 5.
+
+7. Access the Skupper Console at the CRC cluster and show the updated topology.
 
         oc get route skupper
 
