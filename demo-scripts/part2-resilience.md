@@ -32,7 +32,7 @@ The following diagram describes the setup.
 
         oc scale deployment/my-host --replicas=2
 
-6. In the SANDBOX terminal. Perform the same steps as in 3, 4 and 5.
+6. In the SANDBOX terminal. Perform the same steps as in 3, 4 and 5 to show that requests to the backend service will be routed to the CRC cluster when the local service isn't available.
 
 7. Access the Skupper Console at the CRC cluster and show the updated topology.
 
