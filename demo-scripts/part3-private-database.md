@@ -22,6 +22,8 @@ Use the following snippet to create the database and user in the MySQL database:
     terminal1 (RHEL):
     
         ssh myuser@my-rhel-instance
+        
+        oc login <YOUR DEV SANDBOX URL AND CREDTIALS>
 
     terminal2 (SANDBOX):
 
@@ -53,13 +55,13 @@ Use the following snippet to create the database and user in the MySQL database:
 
 7. In the RHEL terminal. Check the rows inserted in the table FruitEntity by the application.
 
-        mysql -u myuser -pmypassword fruitdb --port 3306 --host localhost --execute "SELECT * FROM FruitEntity;"
+        mysql -u myuser -pmypassword fruitdb --port 3306 --host localhost --execute "SELECT * FROM Fruit;"
 
 8. In the web application - add a fruit and click save
 
 9. In the RHEL terminal. Run the command again to check that the content of the table has been updated.
 
-        mysql -u myuser -pmypassword fruitdb --port 3306 --host localhost --execute "SELECT * FROM FruitEntity;"
+        mysql -u myuser -pmypassword fruitdb --port 3306 --host localhost --execute "SELECT * FROM Fruit;"
 
 
 
