@@ -79,4 +79,4 @@ The following diagram describes the demo setup.
         oc get route skupper
 
 
-Continue to [Part2](./part1-hybrid-cloud.md) where we will deploy both the frontend and the backend service in each cluster and show how Skupper can provide resiliency and loadbalincing
+Continue to [Part2](./part2-resilience.md) where we will deploy both the frontend and the backend service in each cluster and show how Skupper can provide resiliency and loadbalincing
