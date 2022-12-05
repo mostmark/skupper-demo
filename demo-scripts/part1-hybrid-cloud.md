@@ -6,7 +6,7 @@ To run the demo script you need to have the skupper CLI installed as well as the
 
         curl https://skupper.io/install.sh | sh
 
-The following diagram describes the setup.
+The following diagram describes the demo setup.
 
 ![Part1 Demo Setup](./images/part1-demo-setup.png)
 
