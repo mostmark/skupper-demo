@@ -6,5 +6,5 @@ This demo shows some capabilities in [Skupper](https://skupper.io) and is split 
   
   - [Part2](./demo-scripts/part1-hybrid-cloud.md) shows resiliency and loadbalincing capabilities in Skupper
   
-  - [Part3](./demo-scripts/part3-hybrid-cloud.md) shows how you can deploy an application in a public cluster that communicates with a MySQL database running in a RHEL instance on a private network
+  - [Part3](./demo-scripts/part3-private-database.md) shows how you can deploy an application in a public cluster that communicates with a MySQL database running in a RHEL instance on a private network
 
