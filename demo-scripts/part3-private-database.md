@@ -29,13 +29,13 @@ Use the following snippet to create the database and user the sample application
         
         oc login <YOUR DEV SANDBOX URL AND CREDTIALS>
 
-    terminal2 (SANDBOX):
+    terminal2 (SANDBOX) - NOTE: You can skip this if you've done the setup in [part1](./part1-hybrid-cloud.md):
 
         PS1='[SANDBOX] \W $ '; export PS1
 
         oc login <YOUR DEV SANDBOX URL AND CREDTIALS>
 
-2. In the SANDBOX terminal
+2. In the SANDBOX terminal - NOTE: Skip this if you've done this step in [part1](./part1-hybrid-cloud.md):
 
         skupper init --site-name sandbox
 
