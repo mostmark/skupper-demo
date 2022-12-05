@@ -70,7 +70,7 @@ The following diagram describes the demo setup.
 
         oc apply -f https://raw.githubusercontent.com/mostmark/skupper-demo/main/my-host-client-route.yaml
 
-6. In the SANDBOX terminal. Get the route for the client application and show the web app. Notice how the front-end application renders the result of the api call to the backend service (my-host). The backend service should return the name of the pod servicing the request and the name of the cluster (CRC). The name of the cluster is set by an environment variable in the deployment of the backend service.
+6. In the SANDBOX terminal. Get the route for the client application and show the web app. Notice how the front-end application renders the result of the api call to the backend service (my-host). The backend service should return the name of the pod servicing the request and the name of the cluster (CRC) the pod is running in. The name of the cluster is set by an environment variable in the deployment of the backend service.
 
         oc get route my-host-client
 
