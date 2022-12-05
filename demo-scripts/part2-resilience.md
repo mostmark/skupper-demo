@@ -1,6 +1,6 @@
 # Part 2 - Resilience
 
-This demo script extends [part 1](./part1-hybrid-cloud.md) and shows load balancing and resiliencecy capabilities in Skupper. In this example we are deploying two identical copies of the application used in [part 1](./part1-hybrid-cloud.md). The backend service is exposed on the Skupper network and Skupper loadbalances accross the two instances of the backend service but always use the local service when it is available. To simulate a failure of the local backend service you scale down the number of replicas to zero. Skupper will automaticlly detect this and start route requests to the instance in the second cluster. When the local service becomes available again Skupper will start routing trafic to the this instance.
+This demo script extends [part 1](./part1-hybrid-cloud.md) and shows load balancing and resiliencecy capabilities in Skupper. In this example we are deploying two identical copies of the application used in [part 1](./part1-hybrid-cloud.md) in each cluster. The backend service is exposed on the Skupper network and Skupper loadbalances accross the two instances of the backend service but always use the local service when it is available. To simulate a failure of the local backend service you scale down the number of replicas to zero. Skupper will automaticlly detect this and start route requests to the instance in the second cluster. When the local service becomes available again Skupper will start routing trafic to the this instance.
 
 The following diagram describes the setup.
 
