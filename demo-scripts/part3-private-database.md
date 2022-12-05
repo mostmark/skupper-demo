@@ -6,7 +6,11 @@ The following diagram describes the setup.
 
 ![Part3 Demo Setup](./images/part3-demo-setup.png)
 
-The prerequisites to run the demo script is to install a MySQL on your RHEL instance and create the database, the user and finally assign the privledges for the user to use the database. The web application used in the demo will automatically create the table and insert sample data at startup. For more information on how to install RHEL please see this [section](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_using_database_servers/assembly_using-mysql_configuring-and-using-database-servers) in the RHEL documentation.
+The prerequisites to run the demo script is to install a MySQL on your RHEL instance and create the database, the user and finally assign the privledges for the user to use the database. The web application used in the demo will automatically create the table and insert sample data at startup. For more information on how to install MySQL in RHEL please see this [section](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_using_database_servers/assembly_using-mysql_configuring-and-using-database-servers) in the RHEL documentation. There are basically three commands you use to install MySQL in your RHEL instance:
+
+        sudo dnf install mysql-server
+        sudo systemctl start mysqld.service
+        sudo systemctl enable mysqld.service
 
 Use the following snippet to create the database and user in the MySQL database:
         
