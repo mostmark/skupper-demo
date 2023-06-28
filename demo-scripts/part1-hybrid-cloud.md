@@ -42,7 +42,7 @@ The following diagram describes the demo setup.
 
 2. In the SANDBOX terminal:
 
-        skupper init --site-name sandbox --enable-console=false
+        skupper init --site-name sandbox
 
         skupper token create crc-to-sandbox-token.yaml
 
