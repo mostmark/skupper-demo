@@ -50,7 +50,7 @@ The following diagram describes the demo setup.
 
         oc new-project skupper-demo
 
-        skupper init --site-name crc --console-auth unsecured
+        skupper init --site-name crc --enable-console --enable-flow-collector --console-auth unsecured
         
         skupper link create --name crc-to-sandbox crc-to-sandbox-token.yaml
 
